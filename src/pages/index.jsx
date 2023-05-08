@@ -24,7 +24,7 @@ import image5 from '@/images/photos/image-5.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
-import Portfolio from './portolio'
+import Projects from './projects'
 import Skills from './skills'
 import Contact from './contact'
 import gzLogo from '../images/logos/gzLogo.png'
@@ -255,8 +255,8 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-      <div id="portfolio" >
-        <Portfolio id="portfolio" />
+      <div id="projects" >
+        <Projects />
       </div>
       <Container id="experience" className="mt-32">
         <h1 className="text-4xl mb-6 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
