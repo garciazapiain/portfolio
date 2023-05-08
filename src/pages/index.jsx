@@ -213,33 +213,6 @@ function Resume() {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              rotations[imageIndex % rotations.length]
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 export default function Home({ articles }) {
   return (
     <>
@@ -262,7 +235,7 @@ export default function Home({ articles }) {
             Front End Engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            My background is in Industrial engineering, a field where I worked in for several years as a consultant. My love for coding developed as I became exposed to the unlimited leverage that technology offers to solve problems. Now I'm fortunate to say that I'm building solutions for other people which is, for me, the greatest satisfaction as a developer.
+            My background is in Industrial engineering, a field where I worked in for several years as a consultant. My love for coding developed as I became exposed to the unlimited leverage that technology offers to solve problems. Now I&apos;m fortunate to say that I&apos;m building solutions for other people which is, for me, the greatest satisfaction as a developer.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -281,7 +254,6 @@ export default function Home({ articles }) {
       <div id="portfolio" >
         <Portfolio id="portfolio" />
       </div>
-      {/* <Photos /> */}
       <Container id="experience" className="mt-24 md:mt-28">
         <h1 className="text-4xl mb-6 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Skills & Work Experience
@@ -290,9 +262,6 @@ export default function Home({ articles }) {
         </p> */}
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10">
-            {/* {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))} */}
             <Skills />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
