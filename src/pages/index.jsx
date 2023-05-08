@@ -108,7 +108,7 @@ function Article({ article }) {
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className="group -m-1 p-1" target="_blank" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon className="h-10 w-10 sm:h-6 sm:w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
 }
@@ -172,8 +172,8 @@ function Resume() {
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-6 w-6 flex-none" />
+      <h2 className="flex text-4xl sm:text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <BriefcaseIcon className="h-10 w-10 sm:h-6 sm:w-6 flex-none" />
         <span className="ml-3">Work</span>
       </h2>
       <ol className="mt-6 space-y-4">
@@ -184,16 +184,16 @@ function Resume() {
             </div> */}
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
-              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+              <dd className="w-full flex-none text-2xl sm:text-xs font-medium text-zinc-900 dark:text-zinc-100">
                 {role.company}
               </dd>
               <dt className="sr-only">Role</dt>
-              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+              <dd className="text-2xl sm:text-xs text-zinc-500 dark:text-zinc-400">
                 {role.title}
               </dd>
               <dt className="sr-only">Date</dt>
               <dd
-                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+                className="ml-auto text-2xl sm:text-xs text-zinc-400 dark:text-zinc-500"
                 aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
                   }`}
               >
@@ -232,13 +232,13 @@ export default function Home({ articles }) {
       <Container id="about" className="mt-0">
         {/* <Image className='w-1/4 mt-0' src={gzLogoDark}/> */}
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-6xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Juan Garcia Zapiain
           </h1>
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-6xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Front End Engineer
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 text-3xl sm:text-base text-zinc-600 dark:text-zinc-400">
             My background is in Industrial engineering, a field where I worked in for several years as a consultant. My love for coding developed as I became exposed to the unlimited leverage that technology offers to solve problems. Now I&apos;m fortunate to say that I&apos;m building solutions for other people which is, for me, the greatest satisfaction as a developer.
           </p>
           <div className="mt-6 flex gap-6">
@@ -259,7 +259,7 @@ export default function Home({ articles }) {
         <Projects />
       </div>
       <Container id="experience" className="mt-32">
-        <h1 className="text-4xl mb-6 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+        <h1 className="text-6xl mb-6 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Skills & Work Experience
         </h1>
         {/* <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">      

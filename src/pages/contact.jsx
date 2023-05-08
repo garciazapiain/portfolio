@@ -18,7 +18,7 @@ export default function Contact() {
             <SimpleLayout
                 title="Contact"
             >
-                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">My email is juangarciazapiain@gmail.com, you can also contact me via <Link target="_blank" href='https://www.linkedin.com/in/juan-garcia-zapiain-532235b9/'>LinkedIn</Link>, or with form below. Looking forward to hearing from you!</p>
+                <p className="mt-6 text-3xl sm:text-base text-zinc-600 dark:text-zinc-400">My email is juangarciazapiain@gmail.com, you can also contact me via <Link target="_blank" href='https://www.linkedin.com/in/juan-garcia-zapiain-532235b9/'>LinkedIn</Link>, or with form below. Looking forward to hearing from you!</p>
                 <div className='mt-6'>
                     <Iframe url="https://docs.google.com/forms/d/e/1FAIpQLSdZUdW9BC2KGG54vrdglMLMNG80FAzU_SkoEPEO2R2OgLu-Wg/viewform?embedded=true"
                         width="640px"
