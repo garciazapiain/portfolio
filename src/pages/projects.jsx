@@ -63,7 +63,7 @@ export default function Projects() {
             <SimpleLayout
                 title="Projects"
                 intro="
-        Below is a list of projects that I have worked on over the past few years, showcasing my skills and expertise in various areas."
+        Below is a list of projects that I have worked on over the past year, showcasing my skills and expertise in various areas."
             >
                 <ul
                     role="list"

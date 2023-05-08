@@ -156,7 +156,7 @@ function Resume() {
     },
     {
       company: 'SinnerSchrader',
-      title: 'QA engineer',
+      title: 'QA Engineer',
       logo: logoAirbnb,
       start: '2020',
       end: '2022',
