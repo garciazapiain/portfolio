@@ -53,14 +53,13 @@ export default function Portfolio() {
     return (
         <>
             <SimpleLayout
-                id="portfolioosss"
                 title="Portfolio"
                 intro="
         Below is a list of projects that I have worked on over the past few years, showcasing my skills and expertise in various areas."
             >
                 <ul
                     role="list"
-                    className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-2"
+                    className="grid grid-cols-1 gap-x-12 gap-y-0 sm:gap-y-16 sm:grid-cols-2 lg:grid-cols-2"
                 >
                     {projects.map((project) => (
                         <Card className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40" as="li" key={project.name}>

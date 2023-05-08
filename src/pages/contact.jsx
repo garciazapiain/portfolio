@@ -22,7 +22,7 @@ export default function Contact() {
                 <div className='mt-6'>
                     <Iframe url="https://docs.google.com/forms/d/e/1FAIpQLSdZUdW9BC2KGG54vrdglMLMNG80FAzU_SkoEPEO2R2OgLu-Wg/viewform?embedded=true"
                         width="640px"
-                        height="600px"
+                        height="420px"
                         id=""
                         className=""
                         display="block"

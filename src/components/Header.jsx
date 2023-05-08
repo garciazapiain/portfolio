@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
+import gzLogo from '../images/logos/gzLogoDark.png'
 
 import { Container } from '@/components/Container'
 
@@ -215,7 +216,7 @@ function AvatarContainer({ className, ...props }) {
     <div
       className={clsx(
         className,
-        'h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10'
+        'w-14 flex rounded-full bg-white/90 px-3 text-sm shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10'
       )}
       {...props}
     />
@@ -399,6 +400,9 @@ export function Header() {
           >
             <div className="relative flex gap-4">
               <div className="flex flex-1"> 
+                  <AvatarContainer>
+                    <Image src={gzLogo}></Image>
+                  </AvatarContainer>
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
                 <MobileNavigation className="pointer-events-auto md:hidden" />

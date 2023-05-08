@@ -27,6 +27,9 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import Portfolio from './portolio'
 import Skills from './skills'
 import Contact from './contact'
+import gzLogo from '../images/logos/gzLogo.png'
+import gzLogoDark from '../images/logos/gzLogoDark.png'
+import gzLogoWhite from '../images/logos/gzLogoWhite.png'
 
 function MailIcon(props) {
   return (
@@ -226,7 +229,8 @@ export default function Home({ articles }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container id="about" className="mt-9">
+      <Container id="about" className="mt-0">
+        {/* <Image className='w-1/4 mt-0' src={gzLogoDark}/> */}
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Juan Garcia Zapiain
@@ -254,17 +258,17 @@ export default function Home({ articles }) {
       <div id="portfolio" >
         <Portfolio id="portfolio" />
       </div>
-      <Container id="experience" className="mt-24 md:mt-28">
+      <Container id="experience" className="mt-32">
         <h1 className="text-4xl mb-6 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Skills & Work Experience
         </h1>
         {/* <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">      
         </p> */}
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="space-y-10">
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-x-12 gap-y-20 lg:max-w-none lg:grid-cols-2">
+          <div className="mt-6 w-full space-y-10">
             <Skills />
           </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
+          <div className="mt-6 w-full space-y-10">
             {/* <Newsletter /> */}
             <Resume />
           </div>

@@ -90,8 +90,8 @@ export default function Skills() {
                 <SkillsIcon className="h-6 w-6 flex-none" />
                 <span className="ml-3">Skills</span>
             </h2>
-            <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">These are the technologies I have the most experience with:</p>
-            <ol className="grid grid-cols-3 space-y-4">
+            <p className="mt-3 mb-3 text-xs text-zinc-500 dark:text-zinc-400">These are the technologies I have the most experience with:</p>
+            <ol className="mt-6 grid grid-cols-3 space-y-4">
                 {skills.map((skill, skillIndex) => (
                     <li key={skillIndex} className="flex flex-col gap-4 justify-end">
                         <div className='flex flex-col align-center items-center'>
