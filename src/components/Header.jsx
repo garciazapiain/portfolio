@@ -216,7 +216,7 @@ function AvatarContainer({ className, ...props }) {
     <div
       className={clsx(
         className,
-        'w-14 flex rounded-full bg-white/90 px-3 text-sm shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10'
+        'w-20 md:w-14 flex rounded-full bg-white/90 px-3 text-sm shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10'
       )}
       {...props}
     />
