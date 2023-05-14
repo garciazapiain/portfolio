@@ -22,7 +22,7 @@ export default function Form() {
     return (
         <form onSubmit={handleSubmit} className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 container px-4 py-6 shadow-lg">
             <div className="mb-4">
-                <label htmlFor="frm-email" className="block font-medium mb-1">
+                <label htmlFor="frm-email" className="text-white block font-medium mb-1">
                     Email
                 </label>
                 <input
@@ -31,11 +31,11 @@ export default function Form() {
                     name="email"
                     autoComplete="email"
                     required
-                    className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500"
+                    className="text-white bg-zinc-700 w-full p-2 rounded focus:border-indigo-500"
                 />
             </div>
             <div className="mb-4">
-                <label htmlFor="frm-phone" className="block font-medium mb-1">
+                <label htmlFor="frm-phone" className="text-white block font-medium mb-1">
                     Phone (Optional)
                 </label>
                 <input
@@ -43,13 +43,13 @@ export default function Form() {
                     type="text"
                     name="phone"
                     autoComplete="tel"
-                    className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500"
+                    className="text-white bg-zinc-700 w-full p-2 rounded focus:border-indigo-500"
                 />
             </div>
             <div className="mb-4">
                 <div className="flex">
                     <div className="w-1/2 mr-2">
-                        <label htmlFor="frm-first" className="block font-medium mb-1">
+                        <label htmlFor="frm-first" className="text-white block font-medium mb-1">
                             First Name
                         </label>
                         <input
@@ -58,11 +58,11 @@ export default function Form() {
                             name="first"
                             autoComplete="given-name"
                             required
-                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500"
+                            className="text-white bg-zinc-700 w-full p-2 rounded focus:border-indigo-500"
                         />
                     </div>
                     <div className="w-1/2 ml-2">
-                        <label htmlFor="frm-last" className="block font-medium mb-1">
+                        <label htmlFor="frm-last" className="text-white block font-medium mb-1">
                             Last Name
                         </label>
                         <input
@@ -71,24 +71,24 @@ export default function Form() {
                             name="last"
                             autoComplete="family-name"
                             required
-                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500"
+                            className="text-white bg-zinc-700 w-full p-2 rounded focus:border-indigo-500"
                         />
                     </div>
                 </div>
             </div>
             <div className="mb-4">
-                <label htmlFor="frm-message" className="block font-medium mb-1">
+                <label htmlFor="frm-message" className="text-white block font-medium mb-1">
                     Message
                 </label>
                 <textarea
                     id="frm-message"
                     rows="6"
                     name="message"
-                    className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500"
+                    className="text-white bg-zinc-700 w-full p-2 rounded focus:border-indigo-500"
                 ></textarea>
             </div>
             <div>
-                <input className="bg-zinc-700 hover:bg-zinc-100 w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500" type="submit" name="submit" value="Submit" />
+                <input className="text-white bg-zinc-700 hover:bg-zinc-500 w-full p-2 rounded focus:border-indigo-500" type="submit" name="submit" value="Submit" />
             </div>
         </form>
     );
