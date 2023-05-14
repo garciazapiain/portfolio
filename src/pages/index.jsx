@@ -22,8 +22,6 @@ import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { formatDate } from '@/lib/formatDate'
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
 import Projects from './projects'
 import Skills from './skills'
 import Contact from './contact'
@@ -275,29 +273,16 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-      <Container id="contact" className="mt-32">
+      {/* <Container id="contact" className="mt-32">
         <h1 className="text-6xl mb-6 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Contact
         </h1>
         <Form />
-      </Container>
-      {/* <div id="contact" >
+      </Container> */}
+      <div id="contact" >
         <Contact />
-      </div> */}
+      </div>
     </>
   )
 }
 
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
-
-  return {
-    props: {
-      articles: (await getAllArticles())
-        .slice(0, 4)
-        .map(({ component, ...meta }) => meta),
-    },
-  }
-}
