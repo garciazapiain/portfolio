@@ -273,15 +273,15 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-      {/* <Container id="contact" className="mt-32">
+      <Container id="contact" className="mt-32">
         <h1 className="text-6xl mb-6 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Contact
         </h1>
         <Form />
-      </Container> */}
-      <div id="contact" >
+      </Container>
+      {/* <div id="contact" >
         <Contact />
-      </div>
+      </div> */}
     </>
   )
 }
