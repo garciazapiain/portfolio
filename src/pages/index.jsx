@@ -30,6 +30,7 @@ import Contact from './contact'
 import gzLogo from '../images/logos/gzLogo.png'
 import gzLogoDark from '../images/logos/gzLogoDark.png'
 import gzLogoWhite from '../images/logos/gzLogoWhite.png'
+import Form from './form'
 
 function MailIcon(props) {
   return (
@@ -171,7 +172,7 @@ function Resume() {
   ]
 
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <div className="h-full rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-4xl sm:text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-10 w-10 sm:h-6 sm:w-6 flex-none" />
         <span className="ml-3">Work</span>
@@ -209,7 +210,7 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="https://resume.io/r/OhlPhzCZ9" target="_blank" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://resume.io/r/OhlPhzCZ9" target="_blank" className="group mt-6 w-full">
         CV
       </Button>
     </div>
@@ -274,9 +275,15 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-      <div id="contact" >
+      <Container id="contact" className="mt-32">
+        <h1 className="text-6xl mb-6 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          Contact
+        </h1>
+        <Form />
+      </Container>
+      {/* <div id="contact" >
         <Contact />
-      </div>
+      </div> */}
     </>
   )
 }
