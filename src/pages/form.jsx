@@ -22,7 +22,7 @@ export default function Form() {
     return (
         <form onSubmit={handleSubmit} className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 container px-4 py-6 shadow-lg">
             <div className="mb-4">
-                <label htmlFor="frm-email" className="text-white block font-medium mb-1">
+                <label htmlFor="frm-email" className="text-zinc-500 dark:text-white  block font-medium mb-1">
                     Email
                 </label>
                 <input
@@ -35,7 +35,7 @@ export default function Form() {
                 />
             </div>
             <div className="mb-4">
-                <label htmlFor="frm-phone" className="text-white block font-medium mb-1">
+                <label htmlFor="frm-phone" className="text-zinc-500 dark:text-white  block font-medium mb-1">
                     Phone (Optional)
                 </label>
                 <input
@@ -49,7 +49,7 @@ export default function Form() {
             <div className="mb-4">
                 <div className="flex">
                     <div className="w-1/2 mr-2">
-                        <label htmlFor="frm-first" className="text-white block font-medium mb-1">
+                        <label htmlFor="frm-first" className="text-zinc-500 dark:text-white  block font-medium mb-1">
                             First Name
                         </label>
                         <input
@@ -62,7 +62,7 @@ export default function Form() {
                         />
                     </div>
                     <div className="w-1/2 ml-2">
-                        <label htmlFor="frm-last" className="text-white block font-medium mb-1">
+                        <label htmlFor="frm-last" className="text-zinc-500 dark:text-white  block font-medium mb-1">
                             Last Name
                         </label>
                         <input
@@ -77,7 +77,7 @@ export default function Form() {
                 </div>
             </div>
             <div className="mb-4">
-                <label htmlFor="frm-message" className="text-white block font-medium mb-1">
+                <label htmlFor="frm-message" className="text-zinc-500 dark:text-white block font-medium mb-1">
                     Message
                 </label>
                 <textarea
