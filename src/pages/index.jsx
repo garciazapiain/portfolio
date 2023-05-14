@@ -232,7 +232,7 @@ export default function Home({ articles }) {
       <Container id="about" className="mt-0">
         {/* <Image className='w-1/4 mt-0' src={gzLogoDark}/> */}
         <div className="max-w-2xl">
-          <h1 className="text-6xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="mt-6 sm:mt-0 text-6xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Juan Garcia Zapiain
           </h1>
           <h1 className="text-6xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
