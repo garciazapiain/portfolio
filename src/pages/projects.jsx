@@ -71,7 +71,7 @@ export default function Projects() {
                 >
                     {projects.map((project) => (
                         <Card className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40" as="li" key={project.name}>
-                            <h2 className="my-6 text-4xl sm:text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+                            <h2 className="my-6 text-2xl sm:text-sm font-semibold text-zinc-800 dark:text-zinc-100">
                                 {project.name}
                             </h2>
                             <div>
@@ -79,8 +79,8 @@ export default function Projects() {
                             </div>
                             <Card.Description>{project.description}</Card.Description>
                             <div className='flex mt-2 w-full'>
-                                {project.demoLink && <Button href={project.demoLink} target="a_blank" className='mr-2'>Demo</Button>}
-                                <Button href={project.repoLink} target="a_blank">Repo</Button>
+                                {project.demoLink && <Button href={project.demoLink} target="a_blank" className='mr-2 w-1/2'>Demo</Button>}
+                                <Button href={project.repoLink} target="a_blank" className='w-1/2'>Repo</Button>
                             </div>
                         </Card>
                     ))}

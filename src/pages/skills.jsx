@@ -86,17 +86,17 @@ function SkillsIcon(props) {
 export default function Skills() {
     return (
         <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-            <h2 className="flex text-4xl sm:text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+            <h2 className="flex text-2xl sm:text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                 <SkillsIcon className="h-10 w-10 sm:h-6 sm:w-6 flex-none" />
                 <span className="ml-3">Skills</span>
             </h2>
-            <p className="mt-3 mb-3 text-3xl sm:text-base text-zinc-500 dark:text-zinc-400">These are the technologies I have the most experience with:</p>
+            <p className="mt-3 mb-3 text-xl sm:text-base text-zinc-500 dark:text-zinc-400">These are the technologies I have the most experience with:</p>
             <ol className="mt-6 grid grid-cols-3 space-y-4">
                 {skills.map((skill, skillIndex) => (
                     <li key={skillIndex} className="flex flex-col gap-4 justify-end">
                         <div className='flex flex-col align-center items-center'>
                             <Image src={skill.logo} alt="" className="h-12 w-12 sm:h-7 sm:w-7" unoptimized />
-                            <p className="text-3xl sm:text-base text-zinc-500 dark:text-zinc-400">{skill.name}</p>
+                            <p className="text-l sm:text-base text-zinc-500 dark:text-zinc-400">{skill.name}</p>
                         </div>
                     </li>
                 ))}
