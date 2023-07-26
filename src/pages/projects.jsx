@@ -92,10 +92,12 @@ export default function Projects() {
             <div className="flex gap-2 mt-2 ml-1 w-full">
                 {techStack.map((item, index) => (
                     <div key={index} className="flex flex-col align-center items-center">
-                        <Image className='h-12 w-12 sm:h-7 sm:w-7' src={item.logo} alt={`Logo ${item.name}`} />
-                        <p className="text-l sm:text-base text-zinc-500 dark:text-zinc-400" style={{ maxWidth: '5rem' }}>
-                            {item.name}
-                        </p>
+                        <Image className='w-10 sm:w-7' src={item.logo} alt={`Logo ${item.name}`} />
+                        <div className="text-center h-full flex items-end">
+                            <p className="text-l sm:text-base text-zinc-500 dark:text-zinc-400">
+                                {item.name}
+                            </p>
+                        </div>
                     </div>
                 ))}
             </div>
@@ -110,7 +112,7 @@ export default function Projects() {
             >
                 <ul
                     role="list"
-                    className="grid grid-cols-1 gap-x-12 gap-y-0 sm:gap-y-16 sm:grid-cols-2 lg:grid-cols-2"
+                    className="grid grid-cols-1 gap-x-12 gap-y-0 sm:gap-y-16 md:grid-cols-2 lg:grid-cols-2"
                 >
                     {projects.map((project) => (
                         <Card className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40" as="li" key={project.name}>
