@@ -70,20 +70,20 @@ const projects = [
             { name: 'React', logo: react },
             { name: 'CSS', logo: css },
         ]
-    },
-    {
-        name: 'To-do app',
-        description:
-            'The classic :)',
-        link: { href: '#', label: 'github.com' },
-        repoLink: "https://github.com/garciazapiain/todo-app",
-        demoLink: "https://garciazapiain.github.io/todo-app/",
-        gif: todoGif,
-        techStack: [
-            { name: 'React', logo: react },
-            { name: 'CSS', logo: css },
-        ]
-    },
+    }
+    // {
+    //     name: 'To-do app',
+    //     description:
+    //         'The classic :)',
+    //     link: { href: '#', label: 'github.com' },
+    //     repoLink: "https://github.com/garciazapiain/todo-app",
+    //     demoLink: "https://garciazapiain.github.io/todo-app/",
+    //     gif: todoGif,
+    //     techStack: [
+    //         { name: 'React', logo: react },
+    //         { name: 'CSS', logo: css },
+    //     ]
+    // },
 ]
 
 export default function Projects() {
