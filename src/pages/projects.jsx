@@ -8,6 +8,13 @@ import czechCasesGif from '../gifs/czech-cases.gif'
 import panoramapGif from '../gifs/panoramap.gif'
 import nectarioGif from '../gifs/nectario.gif'
 import todoGif from '../gifs/todo.gif'
+import css from '@/images/photos/tech/css.png';
+import cssModules from '@/images/photos/tech/css-modules.png';
+import tailwind from '@/images/photos/tech/tailwind.png';
+import react from '@/images/photos/tech/react.png';
+import next from '@/images/photos/tech/next.png';
+import django from '@/images/photos/tech/django.png';
+import heroku from '@/images/photos/tech/heroku.png';
 
 const projects = [
     {
@@ -17,7 +24,13 @@ const projects = [
         link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
         repoLink: "https://github.com/garciazapiain/recurring-manager-fullstack-app",
         websiteLink: "https://recurring-manager-app.herokuapp.com/",
-        gif: recurringGif
+        gif: recurringGif,
+        techStack: [
+            { name: 'React', logo: react },
+            { name: 'CSS modules', logo: cssModules },
+            { name: 'Django', logo: django },
+            { name: 'Heroku', logo: heroku },
+        ]
     },
     {
         name: 'Nectario',
@@ -26,7 +39,11 @@ const projects = [
         link: { href: '#', label: 'github.com' },
         repoLink: "https://github.com/garciazapiain/nectario",
         websiteLink: "https://www.nectario.mx/",
-        gif: nectarioGif
+        gif: nectarioGif,
+        techStack: [
+            { name: 'Next', logo: next },
+            { name: 'Tailwind', logo: tailwind },
+        ]
     },
     {
         name: 'Czech Cases Practice',
@@ -36,6 +53,10 @@ const projects = [
         repoLink: "https://github.com/garciazapiain/czech-cases-practice",
         demoLink: "https://garciazapiain.github.io/czech-cases-practice/",
         gif: czechCasesGif,
+        techStack: [
+            { name: 'React', logo: react },
+            { name: 'CSS', logo: css },
+        ]
     },
     {
         name: 'Panoramap',
@@ -44,7 +65,11 @@ const projects = [
         link: { href: '#', label: 'github.com' },
         repoLink: "https://github.com/garciazapiain/panoramap",
         demoLink: "https://panoramap-pn0bg9ng9-garciazapiain.vercel.app/",
-        gif: panoramapGif
+        gif: panoramapGif,
+        techStack: [
+            { name: 'React', logo: react },
+            { name: 'CSS', logo: css },
+        ]
     },
     {
         name: 'To-do app',
@@ -53,11 +78,29 @@ const projects = [
         link: { href: '#', label: 'github.com' },
         repoLink: "https://github.com/garciazapiain/todo-app",
         demoLink: "https://garciazapiain.github.io/todo-app/",
-        gif: todoGif
+        gif: todoGif,
+        techStack: [
+            { name: 'React', logo: react },
+            { name: 'CSS', logo: css },
+        ]
     },
 ]
 
 export default function Projects() {
+    function TechStack({ techStack }) {
+        return (
+            <div className="flex gap-2 mt-2 ml-1 w-full">
+                {techStack.map((item, index) => (
+                    <div key={index} className="flex flex-col align-center items-center">
+                        <Image className='h-12 w-12 sm:h-7 sm:w-7' src={item.logo} alt={`Logo ${item.name}`} />
+                        <p className="text-l sm:text-base text-zinc-500 dark:text-zinc-400" style={{ maxWidth: '5rem' }}>
+                            {item.name}
+                        </p>
+                    </div>
+                ))}
+            </div>
+        );
+    }
     return (
         <>
             <SimpleLayout
@@ -78,6 +121,10 @@ export default function Projects() {
                                 <Image src={project.gif} alt="My Gif" />
                             </div>
                             <Card.Description>{project.description}</Card.Description>
+                            <div className='md:flex justify-between'>
+                                <Card.Description>Tech Stack: </Card.Description>
+                                <TechStack techStack={project.techStack} />
+                            </div>
                             {project.demoLink &&
                                 <div className='flex h-full items-end mt-2 w-full'>
                                     <Button href={project.demoLink} target="a_blank" className='mr-2 w-1/2'>Demo</Button>

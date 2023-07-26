@@ -1,13 +1,4 @@
-import Head from 'next/head'
 import Image from 'next/image'
-
-import { Card } from '@/components/Card'
-import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
 import html from '@/images/photos/tech/html.png'
 import css from '@/images/photos/tech/css.png'
 import tailwind from '@/images/photos/tech/tailwind.png'
@@ -17,8 +8,6 @@ import react from '@/images/photos/tech/react.png'
 import next from '@/images/photos/tech/next.png'
 import cypress from '@/images/photos/tech/cypress.png'
 import graphql from '@/images/photos/tech/graphql.png'
-import skillsIcon from '@/images/logos/skills.svg'
-import { Button } from '@/components/Button'
 
 const skills = [
     {
