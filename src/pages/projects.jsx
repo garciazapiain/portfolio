@@ -38,7 +38,7 @@ const projects = [
             'Website for a local family owned restaurant.',
         link: { href: '#', label: 'github.com' },
         repoLink: "https://github.com/garciazapiain/nectario",
-        websiteLink: "https://www.nectario.mx/",
+        websiteLink: "https://nectario-garciazapiain.vercel.app/",
         gif: nectarioGif,
         techStack: [
             { name: 'Next', logo: next },
