@@ -144,12 +144,21 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
+      company: 'Freelancer',
+      title: 'Full Stack Engineer',
+      start: '2023',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
+    },
+    {
       company: 'Digismoothie',
       title: 'Front End Engineer',
       logo: logoPlanetaria,
       start: '2022',
       end: {
-        label: 'Present',
+        label: '2023',
         dateTime: new Date().getFullYear(),
       },
     },
