@@ -106,7 +106,7 @@ export default function Projects() {
     return (
         <>
             <SimpleLayout
-                title="Projects"
+                title="Projectss"
                 intro="
         Below is a list of projects that I have worked on over the past year, showcasing my skills and expertise in various areas."
             >
