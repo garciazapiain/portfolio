@@ -1,34 +1,38 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
-import { Card } from '@/components/Card'
-import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import { Button } from '@/components/Button'
-import Iframe from 'react-iframe'
+import React from 'react';
+import {
+    GitHubIcon,
+    LinkedInIcon,
+    GmailIcon, // Import the GmailIcon
+} from '@/components/SocialIcons';
 import Link from 'next/link'
 
-export default function Contact() {
+const Contact = () => {
+    function SocialLink({ icon: Icon, ...props }) {
+        return (
+            <Link className="group -m-1 p-1" target="_blank" {...props}>
+                <Icon className="h-10 w-10 sm:h-6 sm:w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+            </Link>
+        )
+    }
     return (
-        <>
-            <SimpleLayout
-                title="Contact"
-            >
-                <p className="mt-6 text-1xl sm:text-base text-zinc-600 dark:text-zinc-400">My email is juangarciazapiain@gmail.com, you can also contact me via <Link target="_blank" href='https://www.linkedin.com/in/juan-garcia-zapiain-532235b9/'>LinkedIn</Link>, or with form below. Looking forward to hearing from you!</p>
-                <div className='mt-6'>
-                    <Iframe url="https://docs.google.com/forms/d/e/1FAIpQLSdZUdW9BC2KGG54vrdglMLMNG80FAzU_SkoEPEO2R2OgLu-Wg/viewform?embedded=true"
-                        width="640px"
-                        height="420px"
-                        id=""
-                        className=""
-                        display="block"
-                        position="relative" />
-                </div>
-            </SimpleLayout >
-        </>
-    )
-}
+        <div className="mt-6 flex gap-6">
+            {/* <SocialLink
+                href="https://github.com/garciazapiain"
+                aria-label="Follow on GitHub"
+                icon={GitHubIcon}
+            /> */}
+            <SocialLink
+                href="mailto:juangarciazapiain@gmail.com" // Use the mailto: protocol to open the email client
+                aria-label="Send an email"
+                icon={GmailIcon} // Use the GmailIcon
+            />
+            <SocialLink
+                href="https://www.linkedin.com/in/juan-garcia-zapiain-532235b9/"
+                aria-label="Follow on LinkedIn"
+                icon={LinkedInIcon}
+            />
+        </div>
+    );
+};
+
+export default Contact;

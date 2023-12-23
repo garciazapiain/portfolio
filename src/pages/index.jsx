@@ -249,7 +249,7 @@ export default function Home({ articles }) {
           <p className="mt-6 text-2xl sm:text-base text-zinc-600 dark:text-zinc-400">
             My background is in Industrial engineering, a field where I worked in for several years as a consultant. My love for coding developed as I became exposed to the unlimited leverage that technology offers to solve problems. Now I&apos;m fortunate to say that I&apos;m building solutions for other people which is, for me, the greatest satisfaction as a developer.
           </p>
-          <div className="mt-6 flex gap-6">
+          {/* <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://github.com/garciazapiain"
               aria-label="Follow on GitHub"
@@ -260,7 +260,7 @@ export default function Home({ articles }) {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
-          </div>
+          </div> */}
         </div>
       </Container>
       <div id="projects" >
@@ -286,7 +286,7 @@ export default function Home({ articles }) {
         <h1 className="text-5xl mb-6 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Contact
         </h1>
-        <Form />
+        <Contact/>
       </Container>
       {/* <div id="contact" >
         <Contact />
