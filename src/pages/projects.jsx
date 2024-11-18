@@ -8,6 +8,7 @@ import czechCasesGif from '../gifs/czech-cases.gif'
 import panoramapGif from '../gifs/panoramap.gif'
 import nectarioGif from '../gifs/nectario.gif'
 import todoGif from '../gifs/todo.gif'
+import admin_nectario from '../gifs/admin_nectario.gif'
 import css from '@/images/photos/tech/css.png';
 import cssModules from '@/images/photos/tech/css-modules.png';
 import tailwind from '@/images/photos/tech/tailwind.png';
@@ -15,13 +16,29 @@ import react from '@/images/photos/tech/react.png';
 import next from '@/images/photos/tech/next.png';
 import django from '@/images/photos/tech/django.png';
 import heroku from '@/images/photos/tech/heroku.png';
+import vue from '@/images/photos/tech/vue.png';
+import postgres from '@/images/photos/tech/postgressql.png';
+import node from '@/images/photos/tech/node.png';
 
 const projects = [
+    {
+        name: 'Restaurant Admin App',
+        description:
+            'App to manage restaurant inventories, food costs and consumption projections.',
+        repoLink: "https://github.com/garciazapiain/admin-nectario",
+        gif: admin_nectario,
+        techStack: [
+            { name: 'Vue', logo: vue },
+            { name: 'Tailwind', logo: tailwind },
+            { name: 'Node.js', logo: node },
+            { name: 'PostgreSQL', logo: postgres },
+            { name: 'Heroku', logo: heroku },
+        ]
+    },
     {
         name: 'Recurring Manager',
         description:
             'Simplifies the process of managing your recurring purchases.',
-        link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
         repoLink: "https://github.com/garciazapiain/recurring-manager-fullstack-app",
         websiteLink: "https://recurring-manager-app.herokuapp.com/",
         gif: recurringGif,
@@ -127,18 +144,19 @@ export default function Projects() {
                                 <Card.Description>Tech Stack: </Card.Description>
                                 <TechStack techStack={project.techStack} />
                             </div>
-                            {project.demoLink &&
-                                <div className='flex h-full items-end mt-2 w-full'>
-                                    <Button href={project.demoLink} target="a_blank" className='mr-2 w-1/2'>Demo</Button>
-                                    <Button href={project.repoLink} target="a_blank" className='w-1/2'>Repo</Button>
+                            {(project.demoLink || project.websiteLink || project.repoLink) && (
+                                <div className='flex h-full items-end mt-2 w-full gap-2'>
+                                    {project.demoLink && (
+                                        <Button href={project.demoLink} target="_blank" className='flex-1'>Demo</Button>
+                                    )}
+                                    {project.websiteLink && (
+                                        <Button href={project.websiteLink} target="_blank" className='flex-1'>Website</Button>
+                                    )}
+                                    {project.repoLink && (
+                                        <Button href={project.repoLink} target="_blank" className='flex-1'>Repo</Button>
+                                    )}
                                 </div>
-                            }
-                            {project.websiteLink &&
-                                <div className='flex h-full items-end mt-2 w-full'>
-                                    {<Button href={project.websiteLink} target="a_blank" className='mr-2 w-1/2'>Website</Button>}
-                                    <Button href={project.repoLink} target="a_blank" className='w-1/2'>Repo</Button>
-                                </div>
-                            }
+                            )}
                         </Card>
                     ))}
                 </ul>
