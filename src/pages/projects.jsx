@@ -36,6 +36,19 @@ const projects = [
         ]
     },
     {
+        name: 'Nectario',
+        description:
+            'Website for a local family owned restaurant.',
+        link: { href: '#', label: 'github.com' },
+        repoLink: "https://github.com/garciazapiain/nectario",
+        websiteLink: "https://nectario.mx/",
+        gif: nectarioGif,
+        techStack: [
+            { name: 'Next', logo: next },
+            { name: 'Tailwind', logo: tailwind },
+        ]
+    },
+    {
         name: 'Recurring Manager',
         description:
             'Simplifies the process of managing your recurring purchases.',
@@ -47,19 +60,6 @@ const projects = [
             { name: 'CSS modules', logo: cssModules },
             { name: 'Django', logo: django },
             { name: 'Heroku', logo: heroku },
-        ]
-    },
-    {
-        name: 'Nectario',
-        description:
-            'Website for a local family owned restaurant.',
-        link: { href: '#', label: 'github.com' },
-        repoLink: "https://github.com/garciazapiain/nectario",
-        websiteLink: "https://nectario.mx/",
-        gif: nectarioGif,
-        techStack: [
-            { name: 'Next', logo: next },
-            { name: 'Tailwind', logo: tailwind },
         ]
     },
     {
