@@ -21,20 +21,20 @@ import postgres from '@/images/photos/tech/postgressql.png';
 import node from '@/images/photos/tech/node.png';
 
 const projects = [
-    // {
-    //     name: 'Restaurant Admin App',
-    //     description:
-    //         'App to manage restaurant inventories, food costs and consumption projections.',
-    //     repoLink: "https://github.com/garciazapiain/admin-nectario",
-    //     gif: admin_nectario,
-    //     techStack: [
-    //         { name: 'Vue', logo: vue },
-    //         { name: 'Tailwind', logo: tailwind },
-    //         { name: 'Node.js', logo: node },
-    //         { name: 'PostgreSQL', logo: postgres },
-    //         { name: 'Heroku', logo: heroku },
-    //     ]
-    // },
+    {
+        name: 'Restaurant Admin App',
+        description:
+            'App to manage restaurant inventories, food costs and consumption projections.',
+        repoLink: "https://github.com/garciazapiain/admin-nectario",
+        gif: admin_nectario,
+        techStack: [
+            { name: 'Vue', logo: vue },
+            { name: 'Tailwind', logo: tailwind },
+            { name: 'Node.js', logo: node },
+            { name: 'PostgreSQL', logo: postgres },
+            { name: 'Heroku', logo: heroku },
+        ]
+    },
     {
         name: 'Nectario',
         description:
