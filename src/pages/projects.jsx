@@ -24,7 +24,7 @@ const projects = [
     {
         name: 'Restaurant Admin App',
         description:
-            'App to manage restaurant inventories, food costs and consumption projections.',
+            'App to manage restaurant inventories, food costs and ingredient consumption forecasts.',
         repoLink: "https://github.com/garciazapiain/admin-nectario",
         gif: admin_nectario,
         techStack: [
