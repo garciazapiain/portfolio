@@ -74,20 +74,20 @@ const projects = [
             { name: 'React', logo: react },
             { name: 'CSS', logo: css },
         ]
-    },
-    {
-        name: 'Panoramap',
-        description:
-            'Take a glance at a panoramic view and get more info of what you see.',
-        link: { href: '#', label: 'github.com' },
-        repoLink: "https://github.com/garciazapiain/panoramap",
-        demoLink: "https://panoramap-pn0bg9ng9-garciazapiain.vercel.app/",
-        gif: panoramapGif,
-        techStack: [
-            { name: 'React', logo: react },
-            { name: 'CSS', logo: css },
-        ]
     }
+    // {
+    //     name: 'Panoramap',
+    //     description:
+    //         'Take a glance at a panoramic view and get more info of what you see.',
+    //     link: { href: '#', label: 'github.com' },
+    //     repoLink: "https://github.com/garciazapiain/panoramap",
+    //     demoLink: "https://panoramap-pn0bg9ng9-garciazapiain.vercel.app/",
+    //     gif: panoramapGif,
+    //     techStack: [
+    //         { name: 'React', logo: react },
+    //         { name: 'CSS', logo: css },
+    //     ]
+    // }
     // {
     //     name: 'To-do app',
     //     description:
