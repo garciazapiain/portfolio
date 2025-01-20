@@ -217,7 +217,7 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="https://resume.io/r/OhlPhzCZ9" target="_blank" className="group mt-6 w-full">
+      <Button href="https://resume.io/r/T7iGmzikc" target="_blank" className="group mt-6 w-full">
         CV
       </Button>
     </div>
