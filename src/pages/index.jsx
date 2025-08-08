@@ -154,7 +154,7 @@ function Resume() {
     },
     {
       company: 'Nectario Organic Market',
-      title: 'Frontend Developer | IT Consultant',
+      title: 'Frontend Developer',
       start: '2023',
       end: {
         label: '2024',
@@ -238,7 +238,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Garcia Zapiain - Frontend Developer | IT Consultant
+          Garcia Zapiain - Frontend Developer
         </title>
         <meta
           name="description"
@@ -253,7 +253,7 @@ export default function Home({ articles }) {
             Juan Garcia Zapiain
           </h1>
           <h1 className="text-5xl sm:text-5xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
-            Frontend Developer | IT Consultant
+            Frontend Developer
           </h1>
           <p className="mt-6 text-2xl sm:text-base text-zinc-600 dark:text-zinc-400">
             My background is in Industrial engineering, a field where I worked in for several years as a consultant. My love for coding developed as I became exposed to the unlimited leverage that technology offers to solve problems. Now I&apos;m fortunate to say that I&apos;m building solutions for other people which is, for me, the greatest satisfaction as a developer.
